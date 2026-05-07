@@ -1,23 +1,25 @@
-name: hello
+  name: hello
+
 on: workflow_dispatch
+
 jobs:
   build:
-   runs-on: ubuntu-latest
-   steps:
-     - name: salahuddin
-       run:  echo "git  actions"
-         
-  test:
-   runs-on: ubuntu-latest
-   steps:
-     - name: salahuddin
-       run:  echo "test"
-   deploy:
     runs-on: ubuntu-latest
-   steps:
-     - name: salahuddin
-       run:  echo "deploy"
-  
+    steps:
+      - name: salahuddin
+        run: echo "git actions"
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: salahuddin
+        run: echo "test"
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: salahuddin
+        run: echo "deploy"
               
               
                  
