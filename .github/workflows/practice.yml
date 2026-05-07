@@ -5,7 +5,7 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - name: salahuddin
-       run:  echo "git hub actions"
+       run:  echo "git  actions"
          
   test:
    runs-on: ubuntu-latest
