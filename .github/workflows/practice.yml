@@ -9,11 +9,13 @@ jobs:
         run: echo "git actions"
   test:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: salahuddin
         run: echo "test"
   deploy:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: salahuddin
         run: echo "deploy"
